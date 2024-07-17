@@ -23,7 +23,7 @@ prvsButton.addEventListener("click", function() {
     // console.log(imageList[i]);
     imgTag.outerHTML = '<img src=' + '"' + imageList[i] + '">'
     imgTag = document.querySelector("img");
-    
+
 })
 
 nextButton.addEventListener("click", function() {
