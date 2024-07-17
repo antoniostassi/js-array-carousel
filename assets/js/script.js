@@ -1,5 +1,4 @@
 
-console.log("Hela");
 let imageList = [
     "assets/img/01.webp",
     "assets/img/02.webp",
@@ -15,12 +14,13 @@ let imgTag = document.querySelector("img");
 let i = 0;
 
 prvsButton.addEventListener("click", function() {
+
     if (i == 0) {
         i = 4;
     } else {
         i--;
     }
-    console.log(imageList[i]);
+    // console.log(imageList[i]);
     imgTag.outerHTML = '<img src=' + '"' + imageList[i] + '">'
     imgTag = document.querySelector("img");
 })
@@ -32,7 +32,7 @@ nextButton.addEventListener("click", function() {
     } else {
         i++;
     }
-    console.log(imageList[i]);
+    // console.log(imageList[i]);
     imgTag.outerHTML = '<img src=' + '"' + imageList[i] + '">'
     imgTag = document.querySelector("img");
 
