@@ -13,7 +13,9 @@ const nextButton = document.getElementById("next");
 let imgTag = document.querySelector("img");
 
 let i = 0;
-refreshPreviewList();
+
+refreshPreviewList(); // Inizializza immagini preview
+
 prvsButton.addEventListener("click", function() {
 
     if (i == 0) {
@@ -21,10 +23,10 @@ prvsButton.addEventListener("click", function() {
     } else {
         i--;
     }
-    // console.log(imageList[i]);
+
     imgTag.outerHTML = '<img src=' + '"' + imageList[i] + '">'
     imgTag = document.querySelector("img");
-    refreshPreviewList();
+    refreshPreviewList(); // Refresha la preview dando il filtro blur alle immagini non selezionate;
 })
 
 nextButton.addEventListener("click", function() {
@@ -34,10 +36,12 @@ nextButton.addEventListener("click", function() {
     } else {
         i++;
     }
-    // console.log(imageList[i]);
+
     imgTag.outerHTML = '<img src=' + '"' + imageList[i] + '">'
     imgTag = document.querySelector("img");
-    refreshPreviewList();
+
+    refreshPreviewList(); // Refresha la preview dando il filtro blur alle immagini non selezionate;
+
 
 })
 
