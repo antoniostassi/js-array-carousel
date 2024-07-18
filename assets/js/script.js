@@ -38,3 +38,14 @@ nextButton.addEventListener("click", function() {
     imgTag = document.querySelector("img");
 
 })
+
+const previousCont = document.getElementById("previews");
+for(let k=0; k < imageList.length; k++) {
+
+    if(k!=i){
+        previousCont.innerHTML += "<img src='" + imageList[k] + "' class='not-selected'>";
+    } else {
+        previousCont.innerHTML += "<img src='" + imageList[k] + "'>";
+    }
+
+}
